@@ -180,3 +180,7 @@ SSH 是英文Secure Shell 的简写形式。通过使用SSH，你可以把所有
 ![image-20211115141155009](typora-user-images/image-20211115141155009.png)
 
 2. git push -f 强制提交覆盖掉远程仓库的代码
+
+### IDEA使用Git向GitHub推送代码报443问题
+
+- 打开git命令端，执行`git config --global --unset http.proxy`
