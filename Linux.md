@@ -769,3 +769,12 @@ tasklist|findstr "2448"
 5. free -h：以适于人类可读方式显示内存信息。-h与其他命令最大不同是**-h**选项会在数字后面加上适于人类可读的单位
 6. free -l：显示高低内存的利用率。
 7. free -t：显示linux的全部内存。
+
+#### 查看cpu型号等核心数
+
+- 查看CPU型号：cat /proc/cpuinfo | grep name | sort | uniq
+- 查看物理CPU数目：cat /proc/cpuinfo | grep "physical id"
+- 直接查看cpu的各个参数：lscpu(相当于上面的命令集合)
+
+![image-20230607150400798](typora-user-images/image-20230607150400798.png)
+
